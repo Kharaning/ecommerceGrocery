@@ -1,0 +1,42 @@
+@import "../index.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  .hero {
+    width: 78%;
+    background-color: #ffffff;
+    display: flex;
+    padding: 4rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+
+    span {
+      width: 20px;
+      height: 20px;
+      border: 1px solid $mainBackground;
+      border-radius: 50%;
+      background-color: $mainBackground;
+    }
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      
+    }
+  }
+  .heroImgCont {
+    background-color: #ffffff;
+    width: 78%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    img {
+      padding: 20px 10px 5px 10px;
+      width: 100%;
+    }
+  }
+}

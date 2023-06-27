@@ -1,0 +1,120 @@
+@import "../index.scss";
+
+.productCard {
+  background-color: $grayBackground;
+  width: 24%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Leto", sans-serif;
+  border-radius: 8px;
+  justify-self: center;
+  height: fit-content;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  @media (max-width: 900px) {
+    width: 31%;
+  }
+  @media (max-width: 600px) {
+      width: 45%;
+  }
+  button {
+    width: 98%;
+    align-self: center;
+    text-transform: uppercase;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: $mainBackground;
+    transition: 0.2s ease-in;
+    margin: 10px 0;
+    &:hover {
+      color: #ffffff;
+      background-color: $mainBackground;
+    }
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .productImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      scale: 80%;
+      height: 12vh;
+      max-width: 8vw;
+      @media (max-width: 900px) {
+      max-width: 14vw;
+      }
+    }
+    
+  }
+  h4 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .productValue {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    @media (max-width: 900px) {
+      padding:1vw 0 1vw 0;
+      flex-direction: column;
+    }
+    #price {
+      width: 30%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      @media (max-width: 900px) {
+        width: 100%;
+        font-size: 14px;
+        
+      }
+      :nth-child(1) {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      :nth-child(2) {
+        font-size: 14px;
+      }
+    }
+    #value {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      align-items: center;
+      @media (max-width: 900px) {
+        width: 100%;
+        padding-top: 5px;
+      }
+      span {
+        width: 25%;
+        font-size: 22px;
+        text-align: center;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      .valueIcon {
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

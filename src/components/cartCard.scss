@@ -1,0 +1,27 @@
+@import "../index.scss";
+.cartCardContainer{
+    
+    display:Flex;
+    background-color: $grayBackground;
+    padding:1rem;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    cursor:default;
+    
+    h4,h3{
+        font-size: 24px;
+    }
+    span{
+        font-size: 18px;   
+    }
+    #deleteIcon{
+        height: fit-content;
+        justify-self: flex-end;
+        font-size:22px;
+        &:hover{
+            color:$mainBackground;
+            cursor: pointer;
+        }
+    }
+}
